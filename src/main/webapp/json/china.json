@@ -1,0 +1,27 @@
+[
+  {
+    "sex":"小男孩",
+    "citys":[
+      {"name": "北京","value": 31},
+      {"name": "天津","value": 22},
+      {"name": "西藏","value": 39},
+      {"name": "四川","value": 83},
+      {"name": "宁夏","value": 63},
+      {"name": "香港","value": 53},
+      {"name": "澳门","value": 37}
+    ]
+  },
+  {
+  "sex":"小姑娘",
+  "citys":[
+    {"name": "北京","value": 31},
+    {"name": "天津","value": 22},
+    {"name": "河北","value": 39},
+    {"name": "山西","value": 83},
+    {"name": "河南","value": 63},
+    {"name": "山东","value": 53},
+    {"name": "黑龙江","value": 53},
+    {"name": "云南","value": 37}
+  ]
+}
+]

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baizhi.dao.VideoMapper">
+
+    <!--首页查询数据  类别数据  视频数据  用户数据-->
+    <select id="queryByReleaseTime" resultType="com.baizhi.po.VideoPO"  >
+        select c.cate_name cateName,
+               v.id,v.title videoTitle,v.description,v.videopath path,v.coverpath cover,
+               v.createtime uploadTime,
+               u.headimg userPhoto
+        from  yx_category c
+                  right join yx_video v on c.id=v.categoryid
+                  left join yx_user u on v.userid=u.id
+        where v.status='0'
+        order by v.createtime desc
+    </select>
+
+</mapper>
